@@ -1,0 +1,3 @@
+[Ok] - Initial configuration
+[Ok] - Adding initial security in memory
+[Ok] - Add security in Database
