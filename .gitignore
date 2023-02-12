@@ -38,3 +38,4 @@ build/
 *.tfstate
 *.tfstate.backup
 infra/terraform/.terraform
+infra/terraform/*.info
