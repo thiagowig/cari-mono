@@ -4,6 +4,8 @@ on: [push]
 
 jobs:
   bug-test:
+    runs-on: ubuntu-latest
+
     steps:
       - name: clone-application
         uses: actions/checkout@v3
