@@ -17,7 +17,7 @@ jobs:
           path: .
 
       - name: artifact download
-        uses: actions/download-artifact@v3.0.2
+        uses: actions/download-artifact@v1
         with:
           name: test.txt
           path: .
