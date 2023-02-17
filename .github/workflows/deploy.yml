@@ -22,6 +22,10 @@ jobs:
           name: test.txt
           path: myArtifact
 
+      - name: my-shell
+        run: |
+          ls -la
+
       - name: artifact download
         uses: actions/download-artifact@v1
         with:
