@@ -30,4 +30,5 @@ jobs:
       - name: artifact download
         uses: actions/download-artifact@v1
         with:
-          path: .
+          name: myArtifact/test.txt
+          path: myArtifact
