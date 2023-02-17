@@ -14,7 +14,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: test.txt
-          path: .
 
       - name: my-shell
         run: |
@@ -26,4 +25,4 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: test.txt
-          path: .
+          path: myArtifact
