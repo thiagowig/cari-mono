@@ -24,6 +24,7 @@ jobs:
 
       - name: my-shell
         run: |
+          cd myArtifact
           ls -la
 
       - name: artifact download
