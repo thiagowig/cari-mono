@@ -21,6 +21,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: myArtifact/tst.txt
+          path: .
 
       - name: my-shell
         run: |
