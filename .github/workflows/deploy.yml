@@ -16,6 +16,12 @@ jobs:
           name: test.txt
           path: .
 
+      - name: my-shell
+        run: |
+          mkdir myArtifact
+          ls -la
+          cd myArtifact
+
       - name: artifact download
         uses: actions/download-artifact@v1
         with:
