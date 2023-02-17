@@ -10,16 +10,17 @@ jobs:
       - name: clone-application
         uses: actions/checkout@v3
 
-      - name: artifact upload
-        uses: actions/upload-artifact@v3
-        with:
-          name: test.txt
-
       - name: my-shell
         run: |
           mkdir myArtifact
           ls -la
           cd myArtifact
+
+      - name: artifact upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: test.txt
+          path: myArtifact
 
       - name: artifact download
         uses: actions/download-artifact@v1
