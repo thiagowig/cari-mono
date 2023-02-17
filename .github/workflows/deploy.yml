@@ -20,8 +20,8 @@ jobs:
       - name: artifact upload
         uses: actions/upload-artifact@v3
         with:
-          name: myArtifact/tst.txt
-          path: .
+          name: tst.txt
+          path: myArtifact
 
       - name: my-shell
         run: |
