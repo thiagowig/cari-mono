@@ -13,3 +13,13 @@ variable "CORI_ALARM_USER" {
 variable "ALLOWED_IPS" {
   type = list(string)
 }
+
+variable "tags" {
+  type = map(string)
+
+  default = {
+    Terraform = "TRUE"
+    Team      = "Alone"
+    Name      = "cari-mono"
+  }
+}

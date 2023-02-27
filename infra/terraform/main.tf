@@ -8,6 +8,13 @@ resource "aws_security_group" "allow_access_cori_db" {
     protocol    = "tcp"
     cidr_blocks = var.ALLOWED_IPS
   }
+  tags = merge(
+    var.tags,
+    {
+      ENVIRONMENT = "PRD"
+      SERVICE     = "SECURITY_GROUP"
+    }
+  )
 }
 
 resource "aws_db_instance" "cori_db_instance" {
